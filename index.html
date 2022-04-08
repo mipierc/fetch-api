@@ -3,30 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PokeDex</title>
+    <title>Rick and Morty</title>
     <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
     <!-- content here -->
     <main>
-      <h1>Rick and Morty</h1>
-      <section class="rick-and-morty-entry">
+      <h1 class="top">Rick and Morty</h1>
+      <section>
         <header>
-          <h2 id="char-name"></h2>
-          <p id="id-num"></p>
-          <img id="front-image" src="" alt="front image">
-          <div class="types">
-            <span><strong>Status</strong>: </span><span id="char-status"></span>
-            <span><strong>Species</strong>: </span><span id="char-species"></span>
+          <h2 class="head" id="char-name"></h2>
+          <p class="head" id="char-id"></p>
+          <div class="head"><img id="front-image" src="" alt=""></div>
+          <div class="info">
+            <span><strong>Status</strong>: </span>
+            <span id="char-status"> </span>
           </div>
-          <div class="stats">
-            <span><strong>Gender</strong>: </span><span id="poke-gender"></span>
-            <span><strong>Type</strong>: </span><span id="poke-type"></span>
+          <div class="info">
+            <span><strong>Species</strong>: </span>
+            <span id="char-species"> </span>
           </div>
-
+          <div class="info">
+            <span><strong>Gender</strong>: </span>
+            <span id="char-gender"></span>
+          </div>
+          <div class="info">
+            <span><strong>Type</strong>: </span>
+            <span id="char-type"></span>
+          </div>
         </header>
       </section>
-      <button onclick="getPokemon()">Get a Character</button>
+      <div class="button">
+        <button onclick="getCharacter()">Get a Character</button>
+      </div>
     </main>
 
     <!-- content ends -->
